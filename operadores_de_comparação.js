@@ -38,7 +38,7 @@ console.log(a !== b)//true. testa o tipo da variável e o conteúdo
 
 a = 56
 b = 30
-let c = 500
+let v = 500
 let d = 500
 
 console.log(a > b)
