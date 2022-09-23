@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Crie um programa que pergunte quantos produtos um cliente pegou e depois peça para que ele informe
+        o preço de cada produto. Ao recuperar possuir o valor de cada produto, faça a soma total da compra e
+        informe o maior e o menor preço que foi informado.</h1>
+
+        <script>
+
+            
+            //recuperar a qnt de produto
+            const qtdProdutos = parseInt(prompt('Informe a quantidade de produto'))
+            //let o preço de cada prod e armazenar em um array
+            const precosProdutos = []
+            //se informar 10, vai girar até 9, 0-9=10
+            for (let i = 0; i < qtdProdutos; i++) {
+                let preço = parseFloat(prompt('Informe o valor do produto'))
+                precosProdutos[i] = preço
+                //console.log(precosProdutos)//i representa a qnt de x loop vai executar e q o código vai ser guardado no array
+            }//um valor x(dado pelo usuário) na posição 0, 1, 2.. até 9 
+
+            let soma = 0
+            /**for (let i = 0; i < precosProdutos.length; i++){
+                const valor = precosProdutos[i]
+                soma = soma + valor//ou soma += valor
+            }//length acessar a qunt de valores dentro do array/ soma recebe ela mesmo + loop
+
+             alert(` O preço final a pagar é ` ${soma})
+
+            */
+           //Para cada preço da lista de preço fará algo
+
+            for (let preco of precosProdutos) {
+                soma += preco
+
+            }
+            alert(` O preço final a pagar é ${soma}`)
+
+
+        </script>
+    </body>
+</html>
