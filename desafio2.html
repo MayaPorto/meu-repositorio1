@@ -17,11 +17,11 @@
             //recuperar a qnt de produto
             const qtdProdutos = parseInt(prompt('Informe a quantidade de produto'))
             //let o preço de cada prod e armazenar em um array
-            const precosProdutos = []
+            const precosProdutos = []//começa vazio pois não tem preço
             //se informar 10, vai girar até 9, 0-9=10
             for (let i = 0; i < qtdProdutos; i++) {
                 let preço = parseFloat(prompt('Informe o valor do produto'))
-                precosProdutos[i] = preço
+                precosProdutos[i] = preço//se refere á posição do array, dentro da posição i, vai incrementando a cada loop, ele vai receber o loop até chegar o núm que o usuário digitou
                 //console.log(precosProdutos)//i representa a qnt de x loop vai executar e q o código vai ser guardado no array
             }//um valor x(dado pelo usuário) na posição 0, 1, 2.. até 9 
 
